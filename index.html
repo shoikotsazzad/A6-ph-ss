@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>HiluMeowMeowwwww</h1>
-    
+<body class="md:container md:mx-auto mt-5">
+    <!-- Header Section-->
+    <Header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="flex justify-between items-center md:gap-3">
+                    <img src="images/logo.webp" alt="">
+                    <a class="font-bold md:text-3xl">Paddy</a>
+                </div>
+            
+              
+            </div>
+            <div class="navbar-center md:gap-2 hidden lg:flex">
+                <button class="btn btn-outline">Home</button>
+                <button class="btn btn-outline">Shop</button>
+                <button class="btn btn-outline">Contact</button>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-outline btn-success">Menu</a>
+            </div>
+          </div>
+    </Header>
+
+    <!-- Main Section -->
+    <Main>
+        <!-- Title and Image Section -->
+         <section class="text-center md:mt-10 md:mb-8 ">
+            <!-- title and subtitle -->
+            <div>
+                <h3 class="md:my-2">Bringing Families Together ❤️‍🔥 </h3>
+                <h1 class="md:my-5 md:text-7xl ">Your Path to Adoption<br>Starts Here</h1>
+                <p class="md:my-2 text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <br> The point of using Lorem Ipsum is that it has a.</p>
+                <button class="btn btn-success md:my-5">View More</button>
+
+            </div>
+            <!-- cat and dog image -->
+             <div class="flex justify-center items-center md:my-10">
+                <img src="images/pet.webp" alt="" class="md:h-[450px] md:w-[802px] ">
+             </div>
+         </section>
+
+         <!-- Buttons Section -->
+          <section class="text-center ">
+            <!-- title part -->
+             <div>
+                <h1 class="md:text-2xl md:mt-5 md:my-4 md:font-bold">Love is Just a Paw Away</h1>
+                <p class="md:my-2 text-xs">It is a long established fact that a reader will be distracted by the readable content of a page when <br> looking at its layout. The point of using Lorem Ipsum is that it has a. Every pet deserves a loving home, and every home deserves <br>the warmth, loyalty, and joy that only a furry friend can bring. Take the first step toward unconditional love by adopting a pet and making <br> a lifelong connection today!</p>
+             </div>
+             <!-- Buttons part -->
+              <div id="buttons" class="md:mt-10 md:mb-10 flex md:gap-5 justify-center items-center"></div>
+          </section>
+
+          <!-- Pets photos section -->
+           <section id="pets-photos" class="w-11/12 md:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
+
+           </section>
+    </Main>
+
+    <!-- Footer Section -->
+    <Footer></Footer>
+
+    <!-- js link -->
+     <script src="scripts/pet.js"></script>
+
 </body>
 </html>
