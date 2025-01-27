@@ -62,11 +62,19 @@ displayPhotos = (pets) =>{
     const petContainer = document.getElementById("pets-photos")
     petContainer.innerHTML = "";
 
-    // //for the birds category where there is no data
-    // if(pets.lenght == 0){
-    //     petContainer.innerHTML = "No Content Here"
-    //     return;
-    // }
+    //for the birds category where there is no data
+    if(pets.length == 0){
+        petContainer.classList.remove("grid");
+        petContainer.innerHTML = `
+        <div class="min-h-[300px] flex flex-col md:gap-5 justify-center items-center">
+        <img src="images/Icon.png" />
+        <h2 class="text-center text-xl font-bold">No Content Here</h2>
+        </div>
+        `;
+        return;
+    }else{
+        petContainer.classList.add("grid");
+    }
 
     pets.forEach (pet =>{
         console.log(pet);
